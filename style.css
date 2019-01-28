@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Thambi');
+
+body {
+  background: #1e3c72;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2a5298, #1e3c72);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2a5298, #1e3c72); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+body button {
+  animation: wiggle 200ms 3s 8 alternate;
+}
+
+button {
+  color: white;
+  cursor: pointer;
+  background: #ff1b68;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-family: 'Baloo Thambi', cursive;
+}
+
+button:hover,
+button:active {
+  color: #ff1b68;
+  background: white;
+  border: none;
+}
+
+#data-sets {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#react-data-sets {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 100px;
+}
+
+.section-title {
+  color: #FFDC00;
+  font-family: 'Baloo Thambi', cursive;
+}
+
+.list-items {
+  color: #FFDC00;
+  list-style: none;
+  font-family: 'Indie Flower', cursive;
+}
+
+@media (max-width: 40rem) {
+  #data-sets {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  #react-data-sets {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 100px;
+  }
+}
